@@ -19,7 +19,7 @@ from app.domain.schemas import AgentThinkDone, AgentThinkToolCall
 from app.services.llm_client import chat_with_usage as llm_chat_with_usage, get_provider as get_llm_provider
 from app.tools.global_registry import registry
 from app.utils.parse_response import _parse_llm_response
-from db.audit_store import insert_agent_run, insert_agent_step, update_agent_run_final
+from app.db.audit_store import insert_agent_run, insert_agent_step, update_agent_run_final
 
 logger = structlog.get_logger()
 

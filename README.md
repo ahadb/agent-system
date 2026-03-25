@@ -33,7 +33,7 @@ Agent Loop (think → act → observe)
 - `app/agent.py`: core think -> act -> observe loop.
 - `app/tools/global_registry.py`: tool registry + kwargs schema validation.
 - `app/services/`: OpenAI/Vertex clients behind one LLM interface.
-- `db/`: Postgres pooling + audit writes (`agent_runs`, `agent_steps`).
+- `app/db/`: Postgres pooling + audit writes (`agent_runs`, `agent_steps`).
 
 ## Run with Docker
 

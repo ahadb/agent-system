@@ -13,10 +13,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     build-essential \
     && rm -rf /var/lib/apt/lists/*
 
-# Application source (needed for `pip install .` and for `db` imports at startup)
+# Application source (needed for `pip install .` and package imports at startup)
 COPY pyproject.toml ./
 COPY app ./app
-COPY db ./db
 
 RUN pip install --upgrade pip && pip install .
 

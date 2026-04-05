@@ -57,7 +57,7 @@ docker run -d \
   -e PG_PORT=5432 \
   -e PG_DATABASE=agent_system \
   -e PG_USER=agent_user \
-  -e PG_PASSWORD=agent_pass \
+  -e PG_PASSWORD= \
   -e LLM_PROVIDER=openai \
   -e OPENAI_API_KEY=your_openai_key_here \
   -p 8080:8080 \
